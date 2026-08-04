@@ -34,9 +34,9 @@ Proyecto personal desarrollado con Unity.
 
 ## Credits
 
-### Tiles Assets
+### Tile Assets
 
-Some pixel art assets provided by Cainos through the Unity Asset Store.
+Some pixel art Tile assets provided by Cainos through the Unity Asset Store.
 Used under the Standard Unity Asset Store EULA.
 
 
