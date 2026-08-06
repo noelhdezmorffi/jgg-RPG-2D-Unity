@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     private Vector2 moveInput;
     private Rigidbody2D rb;
+    public Vector2 MoveInput => moveInput;
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
