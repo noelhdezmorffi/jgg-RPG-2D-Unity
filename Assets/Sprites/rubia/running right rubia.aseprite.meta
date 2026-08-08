@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 02a937b2d30af0c479561585780b38bb
+guid: 0e1f69503b1c99a42861189fe1b506eb
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,7 +129,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: p back colored
     originalName: 
-    pivot: {x: 0.6666667, y: 0.04347826}
+    pivot: {x: 0.6666667, y: -0.08695652}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -150,7 +150,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Frame_1
     originalName: 
-    pivot: {x: 0.6315789, y: 0.04347826}
+    pivot: {x: 0.6315789, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -160,7 +160,7 @@ ScriptedImporter:
       y: 35
       width: 19
       height: 23
-    spriteID: ccd148fe3dd7f92448ef27ebe6559652
+    spriteID: ce75a8c490d0d0e418c9b90d3f1618be
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -171,7 +171,7 @@ ScriptedImporter:
     uvTransform: {x: 31, y: 35}
   - name: Frame_2
     originalName: 
-    pivot: {x: 0.72727275, y: 0}
+    pivot: {x: 0.72727275, y: -0.09090909}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -181,7 +181,7 @@ ScriptedImporter:
       y: 4
       width: 22
       height: 22
-    spriteID: cee5f44e65072514a8b0ebef27ead7c8
+    spriteID: 4512341dd76627b45b96c24e9ce386b9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -202,7 +202,7 @@ ScriptedImporter:
       y: 35
       width: 19
       height: 24
-    spriteID: db31cfd936dc3e94696d64987f8a5450
+    spriteID: d3fa81f72cd8e1c45a2550eb854214dc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -243,7 +243,7 @@ ScriptedImporter:
         y: 2
         width: 19
         height: 23
-      spriteId: ccd148fe3dd7f92448ef27ebe6559652
+      spriteId: ce75a8c490d0d0e418c9b90d3f1618be
     - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -252,7 +252,7 @@ ScriptedImporter:
         y: 3
         width: 22
         height: 22
-      spriteId: cee5f44e65072514a8b0ebef27ead7c8
+      spriteId: 4512341dd76627b45b96c24e9ce386b9
     - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -261,7 +261,7 @@ ScriptedImporter:
         y: 2
         width: 19
         height: 24
-      spriteId: db31cfd936dc3e94696d64987f8a5450
+      spriteId: d3fa81f72cd8e1c45a2550eb854214dc
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
