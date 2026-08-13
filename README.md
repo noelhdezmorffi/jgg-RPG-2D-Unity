@@ -1,6 +1,8 @@
 # RPG 2D
 
 Proyecto personal desarrollado con Unity.
+Juégalo aquí: 
+https://play.unity.com/es/games/cccce4fd-7c71-4f1e-844e-1cd04a2e29ca/2d-rpg
 
 ## Tecnologías
 
