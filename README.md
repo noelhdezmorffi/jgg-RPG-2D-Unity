@@ -1,44 +1,58 @@
 # RPG 2D
 
-Proyecto personal desarrollado con Unity.
-- Juégalo aquí: 
-https://play.unity.com/es/games/cccce4fd-7c71-4f1e-844e-1cd04a2e29ca/2d-rpg
+RPG 2D cooperativo desarrollado con Unity y C#.
+
+> Proyecto personal enfocado en gameplay 2D, arquitectura de sistemas y
+> networking multiplayer.
+
+## Demo
+
+[▶ Jugar demo online](URL)
+
+## Características
+
+- Movimiento en cuatro direcciones
+- Animaciones 2D mediante Blend Trees
+- Tilemaps y ordenamiento visual por posición Y
+- Cámara con Cinemachine
+- Lobby multijugador
+- Unity Netcode for GameObjects
+- Conexión mediante Unity Relay
+- Selección de personajes
+
+## Controles
+
+| Acción | Teclas |
+|---|---|
+| Moverse | WASD / Flechas |
 
 ## Tecnologías
 
-- Unity 6
+- Unity 6.3
 - C#
+- Unity Input System
+- Netcode for GameObjects
+- Unity Relay
+- Cinemachine
 - Aseprite
 
-## Características actuales
+## Estado del proyecto
 
-- Movimiento en 4 direcciones
-- Animaciones con Blend Tree
-- Colisiones
-- Tilemaps
-- Orden de dibujo
+Actualmente se encuentran implementados el movimiento, las animaciones,
+las colisiones, el escenario 2D y la base del modo multijugador.
 
-## Próximamente
+## Roadmap
 
-- Inventario
-- NPC
 - Sistema de combate
-- Guardado
+- NPCs
+- Inventario
+- Guardado de partida
 
 ## Capturas
 
+<img width="1641" height="1053" alt="image" src="https://github.com/user-attachments/assets/a14f3713-f32b-4aa9-a92f-1cea11476ecc" />
 
-<img width="1498" height="831" alt="imagen" src="https://github.com/user-attachments/assets/c53b48af-36cb-4dc7-a9d8-21b89a9314d1" />
-<img width="847" height="472" alt="imagen" src="https://github.com/user-attachments/assets/6e0efd20-3b8e-4c8f-b675-fe3670be839c" />
-<img width="417" height="296" alt="imagen" src="https://github.com/user-attachments/assets/3d0ee3e1-9086-4c99-b11b-eafcbf41e7b0" />
-<img width="388" height="307" alt="imagen" src="https://github.com/user-attachments/assets/890a952e-1b93-42f9-87e3-a7f3bceb5e49" />
+## Créditos
 
-
-## Credits
-
-### Tile Assets
-
-Some pixel art Tile assets provided by Cainos through the Unity Asset Store.
-Used under the Standard Unity Asset Store EULA.
-
-
+Algunos tiles fueron proporcionados por Cainos mediante Unity Asset Store.
+Utilizados bajo la licencia estándar de Unity Asset Store.
