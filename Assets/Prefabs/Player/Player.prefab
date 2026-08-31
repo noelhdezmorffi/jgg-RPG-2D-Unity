@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2747281206076442439}
   - component: {fileID: 2897273741376579504}
   - component: {fileID: 3438778334296913187}
+  - component: {fileID: 4681060454028118454}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -142,6 +143,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2b445a587b3614ea704bcdf5584396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GraphicsPlayerAnimation
+--- !u!114 &4681060454028118454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933877183108108440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.Components.NetworkAnimator
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkAnimatorExpanded: 0
+  AuthorityMode: 0
+  m_Animator: {fileID: 2897273741376579504}
+  TransitionStateInfoList:
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 229373857
+    DestinationState: -414582212
+    TransitionDuration: 0.25
+    TriggerNameHash: -414582212
+    TransitionIndex: 2
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 2081823275
+    DestinationState: -414582212
+    TransitionDuration: 0.25
+    TriggerNameHash: -414582212
+    TransitionIndex: 2
+  AnimatorParameterEntries:
+    ParameterEntries:
+    - name: MoveX
+      NameHash: 675470966
+      Synchronize: 1
+      ParameterType: 1
+    - name: MoveY
+      NameHash: 1598418656
+      Synchronize: 1
+      ParameterType: 1
+    - name: IdleX
+      NameHash: 460511505
+      Synchronize: 1
+      ParameterType: 1
+    - name: IdleY
+      NameHash: 1819666823
+      Synchronize: 1
+      ParameterType: 1
+    - name: IsMoving
+      NameHash: 120489994
+      Synchronize: 1
+      ParameterType: 4
+    - name: IsDancing
+      NameHash: -1523291736
+      Synchronize: 1
+      ParameterType: 4
+    - name: IsKissing00
+      NameHash: -478841480
+      Synchronize: 1
+      ParameterType: 4
+    - name: Kiss
+      NameHash: -414582212
+      Synchronize: 1
+      ParameterType: 9
+  AnimatorParametersExpanded: 0
 --- !u!1 &1506249635135290356
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +226,9 @@ GameObject:
   - component: {fileID: 3261302152204785416}
   - component: {fileID: 6385743671303668039}
   - component: {fileID: 1958950019151332634}
+  - component: {fileID: 4228824686837351954}
   - component: {fileID: 1958950019151332640}
+  - component: {fileID: 8032760543752985479}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -176,7 +245,7 @@ Transform:
   m_GameObject: {fileID: 1506249635135290356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.24, y: 0.39, z: 0}
+  m_LocalPosition: {x: 1.28778, y: -0.27375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -230,7 +299,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 589441919
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 500
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7225022318458217062, guid: bf9647c4a73223046984c72f03d4d517, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -418,6 +487,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterManager
   ShowTopMostFoldoutHeaderGroup: 1
   characterData: {fileID: 11400000, guid: 0bf1530b332d35c4587ab85e1a02c83b, type: 2}
+--- !u!114 &4228824686837351954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506249635135290356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1fffc9bd22b6c478e8766417304667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerActionController
+  ShowTopMostFoldoutHeaderGroup: 1
+  kissSound: {fileID: 8300000, guid: f926fcf40134fa44883ee049b775a5d6, type: 3}
+  jumpSound: {fileID: 0}
+  attackSound: {fileID: 0}
 --- !u!114 &1958950019151332640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,3 +515,101 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b32f6c5b5c44f6c9f8c2f4bb7f9e1a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkPositionSync
+  ShowTopMostFoldoutHeaderGroup: 1
+--- !u!82 &8032760543752985479
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506249635135290356}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
