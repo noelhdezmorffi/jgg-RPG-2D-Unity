@@ -16,24 +16,20 @@ public class CameraTargetFinder : MonoBehaviour
     {
         while (cinemachineCamera.Target.TrackingTarget == null)
         {
-            NetworkObject[] networkObjects =
-                FindObjectsByType<NetworkObject>(
-                    FindObjectsSortMode.None
-                );
-
-            foreach (NetworkObject networkObject in networkObjects)
+            var client = NetworkManager.Singleton;
+            if (client == null || !client.IsListening)
             {
-                if (networkObject.IsOwner)
-                {
-                    cinemachineCamera.Target.TrackingTarget =
-                        networkObject.transform;
+                yield return null;
+                continue;
+            }
 
-                    Debug.Log(
-                        $"Tracking Target asignado a: {networkObject.name}"
-                    );
+            var localPlayer = client.LocalClient?.PlayerObject;
 
-                    yield break;
-                }
+            if (localPlayer != null)
+            {
+                cinemachineCamera.Target.TrackingTarget = localPlayer.transform;
+                Debug.Log($"Tracking Target asignado al player local: {localPlayer.name}");
+                yield break;
             }
 
             yield return null;
