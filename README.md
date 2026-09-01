@@ -1,6 +1,6 @@
 # RPG 2D
 
-RPG 2D cooperativo desarrollado con Unity y C#.
+RPG 2D multijugador en línea desarrollado con Unity y C#.
 
 > Proyecto personal enfocado en gameplay 2D, arquitectura de sistemas y
 > networking multiplayer.
